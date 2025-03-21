@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 14</title>
+</head>
+<body>
+    <script>
+        let valor = parseInt(prompt("Informe o valor que deseja sacar:"));
+        const cedulas = [100, 50, 20, 10, 5, 2, 1];
+        
+        for (const cedula of cedulas) {
+            if (valor >= cedula) {
+                const quantidade = Math.floor(valor / cedula);
+                console.log(`${quantidade} cédula(s) de R$ ${cedula}`);
+                valor %= cedula;
+            }
+        }
+    </script>
+</body>
+</html>
