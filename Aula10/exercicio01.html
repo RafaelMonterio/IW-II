@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="caixa" placeholder="digite aqui">
+    <button onclick="mostar()">Mostrar</button>
+    <p id="texto"></p> <!-- Adicionado elemento com ID 'texto' -->
+
+    <script>
+        var caixa = document.getElementById('caixa');
+        var texto = document.getElementById("texto"); // Corrigido ID sem espaço
+        function mostar() {
+            var letra = caixa.value;
+            texto.innerHTML = letra; // Atualiza o conteúdo do elemento 'texto'
+        }
+    </script>
+</body>
+</html>
